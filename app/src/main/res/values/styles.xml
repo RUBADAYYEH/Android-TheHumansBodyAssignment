@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="layout_style">
+        <item name="android:background">@color/main_color</item>
+    </style>
+    <style name="imageViewTest">
+        <item name="android:layout_width" >160dp</item>
+        <item name="android:layout_height">160dp</item>
+    </style>
+    <style name="testViewTest">
+        <item name="android:layout_width" >120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="checkBoxStyle">
+        <item name="android:layout_width" >wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="backBtn">
+        <item name="android:layout_width" >match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:background">@drawable/orange_button_background</item>
+        <item name="android:text">Back</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="explanation" >
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+
+
+    <style name="header" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">30dp</item>
+    </style>
+    <style name="header2" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+    <style name="paragraph" >
+        <item name="android:layout_width">210dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="question" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+    <style name="timer" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+    <style name="radioBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30dp</item>
+    </style>
+    
+</resources>

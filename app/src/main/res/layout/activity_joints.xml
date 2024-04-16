@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   style="@style/layout_style"
+    tools:context=".JointsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            style="@style/layout_style"
+            android:layout_height="match_parent">
+            <TextView
+                style="@style/header"
+                android:id="@+id/textView"
+                android:text="Types Of The Joints"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/backBtn"
+                android:onClick="backBtnClicked"
+                style="@style/backBtn" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/skull"
+
+                    />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/header2"
+                        android:text="Immovable" />
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp">
+                        <TextView
+                            style="@style/paragraph"
+                            android:text="he two or more bones are in close contact, but no movement can occur – for example, the bones of the skull. The joints of the skull are called sutures."
+                            />
+                    </ScrollView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/irregularbone"
+
+                    />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:orientation="vertical">
+                    <TextView
+                        style="@style/header2"
+                        android:text="Slightly movable"
+                        />
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp">
+                        <TextView
+                            style="@style/paragraph"
+                            android:text="two or more bones are held together so tightly that only limited movement is permitted – for example, the vertebrae of the spine."
+                            />
+                    </ScrollView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/free"
+
+                    />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                       style="@style/header2"
+                        android:text="Freely movable "
+                        />
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp">
+                        <TextView
+                            style="@style/paragraph"
+                            android:text="most joints within the human body are this type. Motion is the purpose of the joint."
+                            />
+                    </ScrollView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

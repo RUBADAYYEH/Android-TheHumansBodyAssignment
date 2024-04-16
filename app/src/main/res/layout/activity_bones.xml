@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   style="@style/layout_style"
+    tools:context=".BonesActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            style="@style/layout_style"
+            android:layout_height="match_parent">
+    <TextView
+       style="@style/header"
+        android:id="@+id/textView"
+        android:text="Types Of The bones"
+       />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/backBtn"
+                android:onClick="backBtnClicked"
+                style="@style/backBtn"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/longbone"
+
+                />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+               style="@style/header2"
+                android:text="Long Bone" />
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp">
+                <TextView
+                    style="@style/paragraph"
+                    android:text=" has a long, thin shape. Examples include the bones of the arms and legs. With the help of muscles, long bones work as levers to permit movement."
+                    />
+                </ScrollView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+     <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/shortbone"
+
+            />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:orientation="vertical">
+            <TextView
+                style="@style/header2"
+                android:text="Short Bone"/>
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp">
+                <TextView
+                    style="@style/paragraph"
+                    android:text="has a squat,cubed shape.Examples include the bones that make up the wrists and the ankles."
+                   />
+            </ScrollView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+     </androidx.appcompat.widget.LinearLayoutCompat>
+     <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/flatbone"
+
+            />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/header2"
+                android:text="Flat Bone"
+               />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp">
+                <TextView
+                   style="@style/paragraph"
+                    android:text="has a flattened, broad surface. Examples include ribs, shoulder blades, breast bone and skull bones."
+                   />
+            </ScrollView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+     </androidx.appcompat.widget.LinearLayoutCompat>
+     <androidx.appcompat.widget.LinearLayoutCompat
+         android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/irregularbone"
+
+            />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+              style="@style/header2"
+                android:text="Irregular Bone"
+              />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp">
+
+                <TextView
+                   style="@style/paragraph"
+                    android:text="has a shape that does not conform to the above three types. Examples include the bones of the spine (vertebrae)."
+                    />
+            </ScrollView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

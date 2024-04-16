@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/layout_style"
+    tools:context=".TypesOfMusclesActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            style="@style/layout_style"
+            android:layout_height="match_parent">
+            <TextView
+               style="@style/header"
+                android:id="@+id/textView"
+                android:text="Types Of The Muscles"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/backBtn"
+                android:onClick="backBtnClicked"
+               style="@style/backBtn" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:rotation="90"
+                    android:src="@drawable/skeletal"
+
+                    />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                       style="@style/header2"
+                        android:text="Skeletal muscle"
+                      />
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp">
+                        <TextView
+                            style="@style/paragraph"
+                            android:text="the specialised tissue that is attached to bones and allows movement."
+                           />
+                    </ScrollView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:rotation="90"
+                    android:src="@drawable/smooth"
+
+                    />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:orientation="vertical">
+                    <TextView
+                       style="@style/header2"
+                        android:text="Smooth muscle"
+                        />
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp">
+                        <TextView
+                            style="@style/paragraph"
+                            android:text="located in various internal structures including the digestive tract, uterus and blood vessels such as arteries."
+                            />
+                    </ScrollView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="120dp"
+
+                    android:layout_height="170dp"
+                    android:src="@drawable/cardiac"
+                    />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                       style="@style/header2"
+                        android:text="Cardiac muscle"
+                        />
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp">
+
+                        <TextView
+                            style="@style/paragraph"
+                            android:text=" the muscle specific to the heart. The heart contracts and relaxes without our conscious awareness."
+                            />
+                    </ScrollView>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

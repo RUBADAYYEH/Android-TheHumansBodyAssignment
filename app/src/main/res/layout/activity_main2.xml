@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/layout_style"
+
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/showNameTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="19dp" />
+
+            <TextView
+              style="@style/header"
+                android:text="Choose your interest"
+               />
+
+            <Spinner
+                android:id="@+id/interestSpnn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp"
+                android:background="#F3EFEF"
+
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/srcBtn"
+                style="@android:style/Widget.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/orange_button_background"
+                android:onClick="searchbtnClicked"
+                android:text="Search in my interest"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <ListView
+                android:id="@+id/lstView"
+                style="@android:style/Widget.Holo.Light.ListView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                android:cacheColorHint="#8F8D8D"
+                android:clickable="true"
+                android:focusable="true"
+
+                android:focusableInTouchMode="true"
+                android:textColor="@color/white"
+                android:visibility="gone">
+
+
+            </ListView>
+
+            <TextView
+                style="@style/header2"
+                android:text="Daily featured tests "
+                >
+
+            </TextView>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+
+                android:fillViewport="true">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="160dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                style="@style/imageViewTest"
+                                android:src="@drawable/test1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                            <ImageView
+                                style="@style/imageViewTest"
+                                android:src="@drawable/gradient_top_background"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"></ImageView>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/testViewTest"
+                                android:text="Test1 \ntry it now! brain system quiz"
+                                 />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/test1Btn"
+                                android:onClick="testOneBtnClicked"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/orange_button_background"
+                                android:text="Try it!"
+                                android:textColor="@color/white"
+                                android:textSize="12dp" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="160dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                style="@style/imageViewTest"
+                                android:src="@drawable/test2"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                            <ImageView
+                                style="@style/imageViewTest"
+                                android:src="@drawable/gradient_top_background"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"></ImageView>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/testViewTest"
+                                android:text="Test2 \ntry it now! Bones quiz"
+                                 />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/test2Btn"
+                                android:onClick="testTwoBtnClicked"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/orange_button_background"
+                                android:text="Try it!"
+                                android:textColor="@color/white"
+                                android:textSize="12dp" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="160dp"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                style="@style/imageViewTest"
+                                android:src="@drawable/test3"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                            <ImageView
+                                style="@style/imageViewTest"
+                                android:src="@drawable/gradient_top_background"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"></ImageView>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/testViewTest"
+                                android:text="Test3 \ntry it now! heart system quiz"
+                                 />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/test3Btn"
+                                android:onClick="testThreeBtnClicked"
+                                style="@android:style/Widget.Button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/orange_button_background"
+                                android:text="Try it!"
+                                android:textColor="@color/white"
+                                android:textSize="12dp" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </HorizontalScrollView>
+            <TextView
+                style="@style/testViewTest"
+                android:text="Scroll left"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

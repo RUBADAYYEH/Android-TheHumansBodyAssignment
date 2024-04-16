@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/layout_style"
+    tools:context=".SkeletonFunctionsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            style="@style/layout_style"
+            android:layout_height="match_parent">
+            <TextView
+               style="@style/header"
+                android:id="@+id/textView"
+                android:text="Functions of Skeleton"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/backBtn"
+                android:onClick="backBtnClicked"
+                style="@style/backBtn" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="480dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="100dp"
+                    android:src="@drawable/skeleton"/>
+                <ScrollView
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+
+                       style="@style/explanation"
+                        android:text="Giving your body shape: Your skeleton supports the weight of your body. It’s also the anchor for all the tissue that connects to it.
+Helping you move: Your joints, connective tissue and muscles all work together to push and pull parts of your body every time you move.
+Protecting your organs: The human skeleton is like a built-in suit of armor for organs throughout your body. Your skull protects your brain, your ribs shield your heart and lungs, and the vertebrae in your spine keep your spinal cord safe.
+Creating new blood cells: Bone marrow at the center of some of your bones produces new red blood cells and white blood cells your body needs to stay healthy.
+Storing minerals: Your bones hold your body’s supply of important minerals like calcium and vitamin D."/>
+                </ScrollView>
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>
